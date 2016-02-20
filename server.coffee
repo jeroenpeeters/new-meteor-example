@@ -9,7 +9,9 @@ methods =
   hello: (arg1, arg2) ->
     x = x + 1
 
-newMeteor.init server, methods
+collections = ['users']
+newMeteor.addClientScript 'clientScript.coffee'
+newMeteor.init server, methods, collections
 
 
 app.use newMeteor.express

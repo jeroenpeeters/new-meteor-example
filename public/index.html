@@ -8,14 +8,6 @@
   <body>
     <h1>Test2</h1>
     <script>
-      NM.client(function *(){
-        x = yield this.call('hello')
-        y = yield this.call('hello')
-        console.log('x,y=',x, y);
-      });
-      NM.call('hello')(function(err, res){
-        console.log('async', res);
-      });
     </script>
   </body>
 </html>
